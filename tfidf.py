@@ -54,3 +54,12 @@ class tfidf:
         self.tfidf[i][k] = self.tf[i][k] * self.idf[i]    
     
     return self.tfidf
+  
+  
+  if __name__ =="main":
+    input = ['This is a sample sentence',/
+             'This code computes term frequency inverse document frequency', /
+             'The features generated from the given text can be fed as input to a machine learning algorithm'] 
+    tf_idf_comput = tfidf()
+    print('Sample tf-idf computation')
+    print(tf_idf_comput.tf_idf(input))
